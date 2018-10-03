@@ -106,6 +106,8 @@ nav ul{
 .head-shot img{
     width: 100%;
     height: 50%;
+    max-height: 300px;
+    max-width: 300px;
     border-radius: 50%;
 }
 
@@ -137,6 +139,7 @@ nav ul{
 .cards{
     width: 100%;
     min-height: 300px;
+    max-height: 500px;
     border-bottom: 1px black solid;
 }
 
@@ -144,7 +147,7 @@ nav ul{
     width: 100%;
     padding: 0 auto;
     margin:0 auto;
-    max-height: 80%;
+    max-height: 300px;
 }
 
 .cards p{
@@ -179,11 +182,11 @@ nav ul{
     width: 80px;
 }
 
+.contact-banner{
+    background-image: url("images/phone.jpeg");
+    background-position: top center;
+}
 footer{
-    min-height: 200px;
-    background-image: url(images/phone.jpeg);
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -194,16 +197,22 @@ footer li{
     font-size: 20px;
     margin: 5px 0;
     padding: 5px;
-    border: 1px solid white;
 }
 
 
-.social-links ul{
+.footer ul{
     margin: 0;
 }
 
 
 @media screen and (min-width: 500px){
+
+    nav{
+        font-size: 22px;
+    }
+    .about{
+        font-size: 18px;
+    }
     .container{
         width: 30%;
     }
@@ -219,6 +228,10 @@ footer li{
 
 
 @media screen and (min-width:768px){
+
+    .about{
+        font-size: 22px;
+    }
     nav{
         display: flex;
         justify-content: space-evenly;
@@ -228,5 +241,18 @@ footer li{
 
     .container{
         width: 25%;
+    }
+
+    footer li{
+        display:inline-block;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .project-cards{
+        justify-content: space-between;
+    }
+    .cards{
+        width: 20%;
     }
 }
