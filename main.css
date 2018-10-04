@@ -1,3 +1,12 @@
+@keyframes slidein{
+    from {
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+
 html{
     box-sizing: border-box;
 }
@@ -24,7 +33,7 @@ a{
 }
 
 a:hover{
-    color: #3474e4;
+    color: #7d9acd;
     transform: scale(1.5);
 }
 
@@ -42,7 +51,6 @@ header{
     display: flex;
     align-items: center;
     font-weight: lighter;
-    transition: align-items 1s;
 }
 
 header li{
@@ -140,7 +148,12 @@ nav ul{
     flex-wrap: wrap;
     width: 100%;
     padding: 10px;
+
+    animation-name: slidein;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
 }
+
 .cards{
     width: 100%;
     min-height: 300px;
@@ -225,6 +238,7 @@ footer{
 .contact i:hover{
     color: #3474e4;
     transform: scale(1.5);
+    transition: transform 0.25s;
 }
 
 .footer ul{
