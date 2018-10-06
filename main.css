@@ -301,19 +301,30 @@ footer{
         justify-content: flex-end;
         align-items: flex-end;
     }
+    .project-cards{
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width: 1100px){
     .container{
         width: 15%;
     }
+    .side-projects{
+        justify-content: space-evenly;
+    }
+    .side-projects .cards{
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 1400px){
     .project-cards{
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .cards{
         width: 20%;
     }
+    
+    
 }
