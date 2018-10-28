@@ -111,8 +111,9 @@ nav ul{
 }
 
 .head-shot{
-    width: 30%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: flex-start;
 }
 .head-shot img{
@@ -149,16 +150,17 @@ nav ul{
     width: 100%;
     padding: 10px;
 
-    animation-name: slidein;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
 }
 
 .cards{
     width: 100%;
     min-height: 300px;
     max-height: 500px;
-
+    padding-bottom: 20px;
+}
+.cards h2{
+    text-align: center;
+    margin-top: 5px;
 }
 
 .cards img{
@@ -194,6 +196,7 @@ nav ul{
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    text-align: center;
 }
 
 .container .fab{
@@ -212,6 +215,11 @@ nav ul{
     text-align: center;
 }
 
+.side-projects .cards img{
+   height: 70%;
+   display: inherit;
+   align-items: center;
+}
 
 .contact-banner{
     background-image: url("images/phone.jpeg");
