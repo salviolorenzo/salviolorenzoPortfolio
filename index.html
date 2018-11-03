@@ -18,7 +18,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- favicon -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Lorenzo Salvio</title>
 </head>
 
@@ -35,7 +35,7 @@
             </ul>
         </nav>
     </header>
-    <section class="landing">
+    <section class="landing" data-landing>
         <h1>Software Developer</h1>
     </section>
     <section class="about" id="about-me">
@@ -43,12 +43,15 @@
             <div class="head-shot">
                 <img src="images/head-shot.png" alt="">
             </div>
-        </div>
-        <div class="bio">
-            <p>Hello, my name is Lorenzo Salvio and I am currently attending DigitalCrafts Immersive Bootcamp in Atlanta
-                with the September '18 cohort. Since I began my journey with programming and development, I have fallen in
-                love with everything that I have done. For the first time in my life, I feel like an eager student every
-                day. I find myself spending saturdays working on side projects for no other reason than wanting to code.</p>
+            <div class="bio">
+                <p>Hello, my name is Lorenzo Salvio and I am currently attending DigitalCrafts Immersive Bootcamp in Atlanta
+                    with the September '18 cohort. Since I began my journey with programming and development, I have fallen
+                    in love with everything that I have done. For the first time in my life, I feel like an eager student
+                    every day. I find myself spending saturdays working on side projects for no other reason than wanting
+                    to code.</p>
+            </div>
+
+
         </div>
     </section>
     <section class="projects" id="project-section">
@@ -62,7 +65,8 @@
                 <p>A web app that retrieves images based on keyword searches, and displays metadata for the image, including
                     location on a map, and the weather for that location</p>
                 <p>Technologies Used: <br> HTML5, CSS3, JavaScript, Google Maps API, Flickr API, OpenWeatherMap API</p>
-                <a href="http://ec2-18-191-246-225.us-east-2.compute.amazonaws.com/">See it here!</a>
+                <a href="http://ec2-18-191-246-225.us-east-2.compute.amazonaws.com/"><p>See it here!</p></a><br>
+                <a href="https://github.com/salviolorenzo/photoSpotter"><p>Github Repository</p></a>
             </div>
         </div>
     </section>
@@ -81,6 +85,18 @@
         <div class="container">
             <i class="fab fa-js-square"></i>
             <h3>Javascript</h3>
+        </div>
+        <div class="container">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+        </div>
+        <div class="container">
+            <i class="fab fa-node-js"></i>
+            <h3>Node.js</h3>
+        </div>
+        <div class="container">
+            <i class="fab fa-java"></i>
+            <h3>Java</h3>
         </div>
         <div class="container">
             <i class="fab fa-git-square"></i>
@@ -117,6 +133,7 @@
                     <li><a href="https://www.facebook.com/lorenzo.salvio.9"><i class="fab fa-facebook"></i></a></li>
         </ul>
     </footer>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
