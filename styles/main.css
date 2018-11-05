@@ -13,6 +13,7 @@ body{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     background-image: url('../images/tiny-squares.png');
+    background-attachment: fixed;
     color: rgb(11, 11, 11);
     font-weight: bold;
     letter-spacing: 1px;
