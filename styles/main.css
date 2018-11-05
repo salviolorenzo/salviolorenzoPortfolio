@@ -59,7 +59,8 @@ header li:hover{
 
 header h1{
     width: 15%;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 10px;
     margin: 0;
     display: inline-block;
 } 
@@ -87,7 +88,7 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: rgb(28, 28, 28);
     margin-bottom: 20px;
 }
@@ -135,10 +136,11 @@ nav ul{
     width: 100%;
 }
 .banner{
-    font-family: 'Anton', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: white;
     background-image: url("../images/hand-keys.jpeg");
     background-position: center ;
+    background-attachment: fixed;
     background-size: cover;
     min-height: 150px;
     min-width: 100%;
@@ -232,7 +234,7 @@ nav ul{
 
 .contact-banner{
     background-image: url("../images/phone.jpeg");
-    background-position: top center;
+    background-position: center;
 }
 footer{
     display: flex;
