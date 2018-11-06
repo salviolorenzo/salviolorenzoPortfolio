@@ -18,6 +18,8 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!-- favicon -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/main.css">
   <title>Lorenzo Salvio</title>
 </head>
@@ -36,9 +38,9 @@
     </nav>
   </header>
   <section class="landing" data-landing>
-    <h1 data-tagLine></h1>
+    <h1 data-tagLine data-aos="zoom-in" data-aos-duration="1000"></h1>
   </section>
-  <section class="about" id="about-me">
+  <section class="about" id="about-me" data-aos="fade-up" data-aos-duration="1000">
     <div class="about-container">
       <div class="head-shot">
         <img src="images/head-shot.png" alt="">
@@ -58,7 +60,7 @@
       <h1>Projects</h1>
     </div>
     <div class="project-cards">
-      <div class="cards">
+      <div class="cards" data-aos="fade-right" data-aos-duration="1000">
         <img src="images/desktopLanding.png" alt="">
         <h2>PhotoSpotter</h2>
         <p>A web app that retrieves images based on keyword searches, and displays metadata for the image, including location
@@ -67,7 +69,7 @@
         <a href="http://ec2-18-191-246-225.us-east-2.compute.amazonaws.com/"><p>See it here!</p></a><br>
         <a href="https://github.com/salviolorenzo/photoSpotter"><p>Github Repository</p></a>
       </div>
-      <div class="cards">
+      <div class="cards" data-aos="fade-left" data-aos-duration="1000">
         <img src="images/budgetter.png" alt="">
         <h2>Budgetter</h2>
         <p>A simple web app, used to add incomes and expenses. Keep track of your monthly totals, and quickly calculate a
@@ -82,35 +84,35 @@
     <h1>Skills</h1>
   </div>
   <section class="skills">
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="800">
       <i class="fab fa-html5"></i>
       <h3>HTML5</h3>
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
       <i class="fab fa-css3-alt"></i>
       <h3>CSS3</h3>
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
       <i class="fab fa-js-square"></i>
-      <h3>Javascript</h3>
+      <h3>Javascript</h3>8
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
       <i class="fab fa-react"></i>
       <h3>React</h3>
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
       <i class="fab fa-node-js"></i>
       <h3>Node.js</h3>
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
       <i class="fab fa-java"></i>
       <h3>Java</h3>
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
       <i class="fab fa-git-square"></i>
       <h3>Git</h3>
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="700">
       <i class="fab fa-aws"></i>
       <h3>Amazon Web Services</h3>
     </div>
@@ -119,11 +121,11 @@
     <h1>Side Projects</h1>
   </div>
   <section class="side-projects">
-    <div class="cards">
+    <div class="cards" data-aos="fade-right" data-aos-duration="1000">
       <img src="images/ableton.png" alt="" title="Ableton Live 10">
       <a href="https://soundcloud.com/zo_music"><p>Music Production</p></a>
     </div>
-    <div class="cards">
+    <div class="cards" data-aos="fade-left" data-aos-duration="1000">
       <img src="images/photoblog.png" alt="" title="Photo Blog">
       <a href="https://salviolorenzo.github.io/ZoPhotos/"><p>Photography </p></a>
     </div>
@@ -141,6 +143,10 @@
           <li><a href="https://www.facebook.com/lorenzo.salvio.9"><i class="fab fa-facebook"></i></a></li>
     </ul>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
   <script src="scripts/index.js"></script>
 </body>
 

@@ -228,9 +228,9 @@ nav ul{
 }
 
 .side-projects .cards img{
-   height: 90%;
-   display: inherit;
-   align-items: center;
+  height: 90%;
+  display: inherit;
+  align-items: center;
 }
 
 .contact-banner{
@@ -344,13 +344,17 @@ footer{
         width: 100px;
     }
     .container{
-        width: 15%;
+        width: 10%;
     }
     .side-projects{
         justify-content: space-evenly;
     }
     .side-projects .cards{
         width: 49%;
+    }
+
+    .side-projects .cards img{
+      width: 100%;
     }
 }
 
