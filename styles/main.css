@@ -12,7 +12,7 @@ html, body{
 body{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../images/tiny-squares.png');
+    /* background-image: url('../images/tiny-squares.png'); */
     background-attachment: fixed;
     color: rgb(11, 11, 11);
     font-weight: bold;
@@ -45,6 +45,10 @@ header{
     min-height: 100px;
     border-bottom: 1px solid black;
     display: flex;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: white;
     align-items: center;
     font-weight: lighter;
 }
@@ -62,25 +66,22 @@ header h1{
     width: 15%;
     font-family: 'Ubuntu', sans-serif;
     padding-left: 10px;
+    font-size: 20px;
     margin: 0;
-    display: inline-block;
+    /* display: inline-block; */
 } 
 nav{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    align-items: center;
+    max-width: 100%;
     margin: 0;
     transition: font-size 0.7s;
     font-size: 12px;
 
 }
-nav ul{ 
-    display: inherit;
-    justify-content: space-evenly;
-    width: 100%;
-}
 .landing{
-    background-image: url("../images/abstract.jpg");
+    background-image: url("../images/abstract.jpeg");
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,16 +106,6 @@ nav ul{
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.about-container ul{
-    display: inline-block;
-    margin-left: 20px;
-    width: 55%;
-}
-
-.about-container li{
-    padding: 10px 0;
 }
 
 .head-shot{
@@ -239,9 +230,14 @@ nav ul{
 }
 footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     min-height: 100px;
+}
+
+.resume{
+  width: 100%;
 }
 .contact {
     display: inherit;
@@ -268,19 +264,21 @@ footer{
 
 @media screen and (min-width: 500px){
 
+    header h1{
+      font-size: 24px;
+    }  
     nav{
         font-size: 22px;
+        width: 100%;
+        justify-content: space-evenly;
     }
+
     .about{
         font-size: 18px;
     }
 
-    .head-shot{
-        width: 40%;
-    }
-
     .bio{
-        width: 55%;
+        width: 90%;
         padding: 0;
     }
     .container{
@@ -302,6 +300,9 @@ footer{
 
 
 @media screen and (min-width:768px){
+  header h1{
+    font-size: 28px;
+  }  
 
     .landing h1{
         font-size: 40px;
@@ -311,7 +312,8 @@ footer{
     }
     nav{
         display: flex;
-        justify-content: center;
+        width: 100%;
+        justify-content: space-evenly;
         font-size: 150%;
     }
 
@@ -327,11 +329,23 @@ footer{
 
 @media screen and (min-width: 900px){
     header{
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
         align-items: flex-end;
     }
+
+    nav{
+      justify-content: space-evenly;
+    }
+    .bio{
+      width: 60%;
+    }
+
+    .head-shot{
+      width: 35%;
+    }
+
     .cards{
-        width: 40%;
+        width: 49%;
     }
 
     .project-cards{
@@ -343,6 +357,14 @@ footer{
     header h1{
         width: 100px;
     }
+    .bio{
+      width: 70%;
+    }
+
+    .head-shot{
+      width: 30%;
+    }
+
     .container{
         width: 10%;
     }
