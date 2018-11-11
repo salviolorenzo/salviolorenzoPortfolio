@@ -137,7 +137,6 @@ nav li{
     color: white;
     background-image: url("../images/hand-keys.jpeg");
     background-position: center ;
-    background-attachment: fixed;
     background-size: cover;
     min-height: 150px;
     min-width: 100%;
@@ -276,6 +275,10 @@ footer{
         font-size: 22px;
         width: 100%;
         justify-content: space-evenly;
+    }
+
+    .banner{
+      background-attachment: fixed;
     }
 
     .about{
