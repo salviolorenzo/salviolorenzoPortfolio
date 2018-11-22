@@ -99,7 +99,7 @@ HERO IMAGE STYLES
 ========================================*/
 .landing{
     background-image: url("../images/abstract.jpeg");
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
@@ -278,7 +278,7 @@ footer{
 }
 
 .resume  * {
-  margin: 5px;
+  margin: 10px;
 }
 .contact {
     display: inherit;
