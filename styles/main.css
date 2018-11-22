@@ -1,3 +1,7 @@
+/* ======================================
+GLOBAL STYLES
+========================================*/
+
 html{
     box-sizing: border-box;
 }
@@ -41,6 +45,10 @@ li{
     list-style-type: none;
 }
 
+
+/* ======================================
+HEADER STYLES
+========================================*/
 header{
     min-height: 100px;
     border-bottom: 1px solid black;
@@ -85,9 +93,13 @@ nav li{
   padding: 0 5px;
 }
 
+
+/* ======================================
+HERO IMAGE STYLES
+========================================*/
 .landing{
     background-image: url("../images/abstract.jpeg");
-    background-position: center ;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
@@ -104,6 +116,10 @@ nav li{
     transition: font-size 0.5s;
 
 }
+
+/* ======================================
+ABOUT ME STYLES
+========================================*/
 
 .about-container{
     display: flex;
@@ -148,6 +164,10 @@ nav li{
     margin: 0;
 }
 
+/* ======================================
+PROJECTS STYLES
+========================================*/
+
 .project-cards, .side-projects{
     display:flex;
     flex-wrap: wrap;
@@ -183,6 +203,10 @@ nav li{
     margin: 0;
 }
 
+
+/* ======================================
+SKILLS STYLES
+========================================*/
 .skills-banner{
     background-image: url("../images/code.png");
 }
@@ -213,6 +237,10 @@ nav li{
     width: 80px;
 }
 
+
+/* ======================================
+SIDE PROJECTS STYLES
+========================================*/
 .side-banner{
     background-image: url("../images/mixer.jpeg");
 }
@@ -228,6 +256,10 @@ nav li{
   align-items: center;
 }
 
+/* ======================================
+FOOTER STYLES
+========================================*/
+
 .contact-banner{
     background-image: url("../images/phone.jpeg");
     background-position: center;
@@ -242,6 +274,11 @@ footer{
 
 .resume{
   width: 100%;
+  text-align: center;
+}
+
+.resume  * {
+  margin: 5px;
 }
 .contact {
     display: inherit;
@@ -265,6 +302,10 @@ footer{
     margin: 0;
 }
 
+
+/* ======================================
+MEDIA QUERIES
+========================================*/
 
 @media screen and (min-width: 500px){
 
