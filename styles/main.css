@@ -85,7 +85,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 100%;
+    /* max-width: 100%; */
     margin: 0;
     transition: font-size 0.7s;
     font-size: 12px;
@@ -102,6 +102,7 @@ HERO IMAGE STYLES
 .landing{
     background-image: url("../images/abstract.jpeg");
     background-position: center;
+    /* background-position-y: px; */
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
@@ -150,6 +151,11 @@ ABOUT ME STYLES
     padding: 5px 20px;
     width: 100%;
 }
+
+.bio p{
+    font-size:16px;
+}
+
 .banner{
     font-family: 'Ubuntu', sans-serif;
     color: white;
@@ -236,8 +242,12 @@ SKILLS STYLES
 .container .fab{
     font-size: 60px;
 }
-.container img{
+.container i{
     width: 80px;
+}
+
+.container img{
+    max-width:61px;
 }
 
 
@@ -269,7 +279,7 @@ FOOTER STYLES
 }
 footer{
     display: flex;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
     flex-wrap: wrap;
     justify-content: space-around;
@@ -318,7 +328,7 @@ MEDIA QUERIES
       font-size: 24px;
     }  
     nav{
-        font-size: 22px;
+        font-size: 18px;
         width: 100%;
         justify-content: space-evenly;
     }
@@ -366,7 +376,7 @@ MEDIA QUERIES
     }
     nav{
         display: flex;
-        width: 100%;
+        /* width: 100%; */
         justify-content: space-evenly;
         font-size: 150%;
     }
