@@ -375,10 +375,6 @@ MEDIA QUERIES
     .container{
         width: 25%;
     }
-
-    .contact{
-        justify-content: center;
-    }
 }
 
 @media screen and (min-width: 900px){
