@@ -37,15 +37,24 @@
 </head>
 
 <body>
-  <header data-header>
+  <header data-header id="home">
     <h1>Lorenzo Eric Salvio</h1>
-    <nav>
+    <nav class="desktopNav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-me">About</a></li>
+      <li><a href="#project-section">Projects</a></li>
+      <li><a href="#skills-part">Skills</a></li>
+      <li><a href="#contact-me">Contact</a></li>
+    </nav>
+    <img src="images/hamburger.svg" alt="" data-hamburger>
+    <nav class="mobileNav hidden" data-mobile-nav>
       <li><a href="index.html">Home</a></li>
       <li><a href="#about-me">About</a></li>
       <li><a href="#project-section">Projects</a></li>
       <li><a href="#skills-part">Skills</a></li>
       <li><a href="#contact-me">Contact</a></li>
     </nav>
+    
   </header>
   <section class="landing" data-landing>
     <h1 data-tagLine data-aos="zoom-in" data-aos-duration="1000"></h1>
@@ -87,7 +96,7 @@
         </div>
         <div class="card-links">
           <a id="live" href="http://www.u-mood.com/" target="_blank">Live Demo</a><br>
-          <a id="repo" href="https://github.com/samerickson/uMood" target="_blank">Github</a>
+          <a id="repo" href="https://github.com/samerickson95/uMood" target="_blank">Github</a>
         </div>
       </div>
       <div class="cards" data-aos="fade-right" data-aos-duration="1000">
@@ -178,12 +187,12 @@
         my resume.</h3></a>
     <a class="resume" href="http://github.com/salviolorenzo/salviolorenzoPortfolio" target="_blank"><h4>See the code for
         this site.</h4></a>
-    <ul class="contact" id="contact-me">
-      <li><a href="tel:1-949-285-1391"><i class="fas fa-phone-square"></i></a>
-        <li><a href="mailto:salviolorenzo@gmail.com"><i class="fas fa-envelope-square"></i></a>
-          <li><a href="https://www.linkedin.com/in/lorenzo-salvio" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/salviolorenzo" target="_blank"><i class="fab fa-github"></i></a></li>
-    </ul>
+        <ul class="contact" id="contact-me">
+          <li><a href="tel:1-949-285-1391"><i class="fas fa-phone-square"></i></a>
+            <li><a href="mailto:salviolorenzo@gmail.com"><i class="fas fa-envelope-square"></i></a>
+              <li><a href="https://www.linkedin.com/in/lorenzo-salvio" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/salviolorenzo" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
   </footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

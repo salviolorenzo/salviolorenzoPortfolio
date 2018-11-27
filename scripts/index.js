@@ -15,8 +15,15 @@ function typeWriter() {
 typeWriter();
 
 const header = document.querySelector('[data-header]');
-
 const uMoodImg = document.getElementById('uMoodImg');
+
+const hamburger = document.querySelector('[data-hamburger]');
+const mobileNav = document.querySelector('[data-mobile-nav]');
+
+hamburger.addEventListener('click', () => {
+  mobileNav.classList.toggle('hidden');
+})
+
 
 uMoodImg.addEventListener('mouseover', () => {
   uMoodImg.src = 'https://media.giphy.com/media/YAXIGsoPJojzlVcbJP/giphy.gif';
