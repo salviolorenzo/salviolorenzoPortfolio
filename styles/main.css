@@ -528,6 +528,9 @@ MEDIA QUERIES
     .bio{
       width: 60%;
     }
+    .bio p{
+        font-size: 18px;
+    }
 
     .head-shot{
       width: 35%;
@@ -548,6 +551,10 @@ MEDIA QUERIES
     }
     .bio{
       width: 70%;
+    }
+
+    .bio p{
+        font-size: 20px;
     }
 
     .head-shot{
