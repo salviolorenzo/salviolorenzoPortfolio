@@ -454,7 +454,7 @@ MEDIA QUERIES
     .desktopNav{
         display:flex;
         font-size: 18px;
-        width: 85%;
+        width: 100%;
         justify-content: space-evenly;
     }
 
