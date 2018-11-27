@@ -194,7 +194,7 @@ PROJECTS STYLES
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background-color: rgba(255,255,255,0.7);
 }
 .cards h2{
@@ -223,16 +223,44 @@ PROJECTS STYLES
     justify-content: space-evenly;
     align-items: space-evenly;
     width: 80%;
+    padding-bottom: 5px;
 }
 
 .technologies p{
-    width: 47%;
+    width: 80%;
     background-color: rgba(0,0,0,0.8);
     color: white;
     border-radius: 5px;
     padding: 5px 0;
     margin: 5px;
     text-align: center;
+}
+
+.card-links{
+    display: flex;
+    /* padding: 10px; */
+    border: 1px solid rgba(0,0,0,0.8);
+    /* width: 80%; */
+ 
+}
+
+#live{
+    padding: 10px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+#repo{
+    padding: 10px 25px;
+    color:black;
+}
+
+#live:hover{
+    background-color: rgba(97, 168, 255, 0.7);
+}
+
+#repo:hover{
+    background-color:  rgba(97, 168, 255,0.7);
 }
 
 
@@ -376,6 +404,9 @@ MEDIA QUERIES
         justify-content: space-evenly;
     }
 
+    .technologies p{
+        width: 47%;
+    }
 
     .contact{
         justify-content: space-around;
