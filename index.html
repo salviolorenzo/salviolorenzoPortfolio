@@ -1,199 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="developer, web, software, engineer, design, web-development, website, html, css, javascript, node, react, redux"
+    />
+    <link rel="image_src" href="/images/bbLWhite.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="developer, web, software, engineer, design, web-development, website, html, css, javascript, node, react, redux">
-  <link rel="image_src" href="/images/bbLWhite.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- favicon -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Lorenzo Salvio | Portfolio</title>
+  </head>
 
-  <link rel="stylesheet" href="styles/main.css">
-  <title>Lorenzo Salvio | Portfolio</title>
-</head>
-
-<body>
-  <header data-header id="home">
-    <h1>Lorenzo Eric Salvio</h1>
-    <nav class="desktopNav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#project-section">Projects</a></li>
-      <li><a href="#skills-part">Skills</a></li>
-      <li><a href="#contact-me">Contact</a></li>
-    </nav>
-    <img src="images/hamburger.svg" alt="" data-hamburger>
-    <nav class="mobileNav hidden" data-mobile-nav>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#project-section">Projects</a></li>
-      <li><a href="#skills-part">Skills</a></li>
-      <li><a href="#contact-me">Contact</a></li>
-    </nav>
-    
-  </header>
-  <section class="landing" data-landing>
-    <h1 data-tagLine data-aos="zoom-in" data-aos-duration="1000"></h1>
-  </section>
-  <section class="about" id="about-me" data-aos="fade-up" data-aos-duration="1000">
-    <div class="about-container">
-      <div class="head-shot">
-        <img src="images/head-shot.png" alt="">
+  <body>
+    <header data-header id="home">
+      <h1>Lorenzo Eric Salvio</h1>
+      <nav class="desktopNav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#project-section">Projects</a></li>
+        <li><a href="#skills-part">Skills</a></li>
+        <li><a href="#contact-me">Contact</a></li>
+      </nav>
+      <img src="images/hamburger.svg" alt="" data-hamburger />
+      <nav class="mobileNav hidden" data-mobile-nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#project-section">Projects</a></li>
+        <li><a href="#skills-part">Skills</a></li>
+        <li><a href="#contact-me">Contact</a></li>
+      </nav>
+    </header>
+    <section class="landing" data-landing>
+      <h1 data-tagLine data-aos="zoom-in" data-aos-duration="1000"></h1>
+    </section>
+    <section
+      class="about"
+      id="about-me"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="about-container">
+        <div class="head-shot"><img src="images/head-shot.png" alt="" /></div>
+        <div class="bio">
+          <p>
+            Hello, my name is Lorenzo Salvio and I am currently attending
+            DigitalCrafts Immersive Bootcamp in Atlanta with the September '18
+            cohort. I am a 22 year old, originally from California. I first
+            began coding one year ago with a hobby course on Udemy. At the time,
+            I was attempting to break into the L.A. music scene as a DJ, and I
+            wanted to build myself a website. Coding for the sake of coding
+            quickly took over, and music production became the hobby. In the
+            spring of 2018, I decided to prioritize studying coding full time,
+            and stopped pursuing my Bachelor's degree in Business at California
+            State U, Fullerton. I moved to Atlanta to attend DigitalCrafts and I
+            can say with full confidence that it was the right decision. Since I
+            began my journey with programming and development, I have fallen in
+            love with everything that I have done. For the first time in my
+            life, I feel like an eager student every day. When I'm not coding, I
+            enjoy having deep discussions with friends, writing music, and
+            reading books on psychology.
+          </p>
+        </div>
       </div>
-      <div class="bio">
-        <p>Hello, my name is Lorenzo Salvio and I am currently attending DigitalCrafts Immersive Bootcamp in Atlanta with
-          the September '18 cohort. I am a 22 year old, originally from California. I first began coding one year ago with
-          a hobby course on Udemy. At the time, I was attempting to break into the L.A. music scene as a DJ, and I wanted to build myself a website. Coding for the sake of coding quickly took over, and music production became the hobby. In the spring of 2018, I decided to prioritize studying coding full time, and stopped pursuing my Bachelor's degree in Business at California State U, Fullerton. I moved to Atlanta to attend DigitalCrafts and I can say with full confidence that it was the right decision. Since I began my journey with programming and development, I have fallen in love with everything that I have done. For the first time in my life, I feel like an eager student every day. When I'm not coding, I enjoy having deep discussions with friends, writing music, and reading books on psychology.</p>
+    </section>
+    <section class="projects" id="project-section">
+      <div class="banner"><h1>Projects</h1></div>
+      <div class="project-cards">
+        <div class="cards" data-aos="fade-right" data-aos-duration="1000">
+          <img src="images/desktopHome.png" alt="" id="uMoodImg" />
+          <h2>uMood</h2>
+          <p>
+            A web application meant to allow users to track their daily level of
+            wellbeing, based on their daily answers to 6 questions from the
+            WHODAS 36 Depression Screen. <br />
+            Answers for the 6 previous days and current day are displayed
+            graphically through a Chart.js line chart, and stored in a
+            PostgreSQL database
+          </p>
+          <p>Technologies Used:</p>
+          <div class="technologies">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>Node.js</p>
+            <p>Express.js</p>
+            <p>PostgreSQL</p>
+            <p>Chart.js</p>
+            <p>Bcrypt</p>
+          </div>
+          <div class="card-links">
+            <a id="live" href="http://www.u-mood.com/" target="_blank"
+              >Live Demo</a
+            ><br />
+            <a
+              id="repo"
+              href="https://github.com/samerickson95/uMood"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+        </div>
+        <div class="cards" data-aos="fade-right" data-aos-duration="1000">
+          <img src="images/desktopLanding.png" alt="" id="psImg" />
+          <h2>PhotoSpotter</h2>
+          <p>
+            A web app that retrieves images based on keyword searches, and
+            displays metadata for the image, including location on a map, and
+            the weather for that location. The being to tell the user whether it
+            is a good day to replicate that photo.
+          </p>
+          <p>Technologies Used:</p>
+          <div class="technologies">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>JavaScript</p>
+            <p>Google Maps API</p>
+            <p>Flickr API</p>
+            <p>OpenWeatherMap API</p>
+          </div>
+          <div class="card-links">
+            <a
+              id="live"
+              href="http://ec2-18-216-107-139.us-east-2.compute.amazonaws.com/"
+              target="_blank"
+              >Live Demo</a
+            ><br />
+            <a
+              id="repo"
+              href="https://github.com/salviolorenzo/photoSpotter"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+        </div>
+        <div class="cards" data-aos="fade-right" data-aos-duration="1000">
+          <img src="images/Landingimg.png" alt="" id="budgetImg" />
+          <h2>Budgetter</h2>
+          <p>
+            A simple web app, used to add incomes and expenses. Keep track of
+            your monthly totals. All information is stored in a PostgreSQL
+            database.
+          </p>
+          <p>Technologies Used:</p>
+          <div class="technologies">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>JavaScript</p>
+            <p>Node.js</p>
+            <p>Express.js</p>
+            <p>PostgreSQL</p>
+          </div>
+          <div class="card-links">
+            <a
+              id="repo"
+              href="https://github.com/salviolorenzo/budgetTool"
+              target="_blank"
+              ><p>Github</p></a
+            >
+          </div>
+        </div>
       </div>
-
-
-    </div>
-  </section>
-  <section class="projects" id="project-section">
-    <div class="banner">
-      <h1>Projects</h1>
-    </div>
-    <div class="project-cards">
+    </section>
+    <div class="skills-banner banner" id="skills-part"><h1>Skills</h1></div>
+    <section class="skills">
+      <div class="container" data-aos="fade-left" data-aos-duration="800">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+      </div>
+      <div
+        class="container"
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-delay="100"
+      >
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+      </div>
+      <div
+        class="container"
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+      </div>
+      <div
+        class="container"
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-delay="300"
+      >
+        <i class="fab fa-react"></i>
+        <h3>React.js</h3>
+      </div>
+      <div
+        class="container"
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-delay="400"
+      >
+        <i class="fab fa-node-js"></i>
+        <h3>Node.js</h3>
+      </div>
+      <div
+        class="container"
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-delay="500"
+      >
+        <img src="images/psql.png" alt="" />
+        <h3>PostgreSQL</h3>
+      </div>
+      <div
+        class="container"
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-delay="600"
+      >
+        <i class="fab fa-git-square"></i>
+        <h3>Git</h3>
+      </div>
+      <div
+        class="container"
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-delay="700"
+      >
+        <i class="fab fa-aws"></i>
+        <h3>Amazon Web Services</h3>
+      </div>
+    </section>
+    <div class="banner side-banner"><h1>Side Projects</h1></div>
+    <section class="side-projects">
       <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-        <img src="images/desktopHome.png" alt="" id="uMoodImg">
-        <h2>uMood</h2>
-        <p>A web application meant to allow users to track their daily level of wellbeing, based on their daily answers to
-          6 questions from the WHODAS 36 Depression Screen. <br> Answers for the 6 previous days and current day are displayed
-          graphically through a Chart.js line chart, and stored in a PostgreSQL database
-        </p>
-        <p>Technologies Used:</p>
-        <div class="technologies">
-          <p>HTML5</p> <p>CSS3</p><p>Node.js</p> <p>Express.js</p> <p>PostgreSQL</p> <p>Chart.js</p> <p>Bcrypt</p> 
-        </div>
-        <div class="card-links">
-          <a id="live" href="http://www.u-mood.com/" target="_blank">Live Demo</a><br>
-          <a id="repo" href="https://github.com/samerickson95/uMood" target="_blank">Github</a>
-        </div>
+        <img src="images/ableton.png" alt="" title="Ableton Live 10" />
+        <a href="https://soundcloud.com/zo_music" target="_blank"
+          ><p>Music Production</p></a
+        >
       </div>
-      <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-        <img src="images/desktopLanding.png" alt="" id="psImg">
-        <h2>PhotoSpotter</h2>
-        <p>A web app that retrieves images based on keyword searches, and displays metadata for the image, including location
-          on a map, and the weather for that location. The being to tell the user whether it is a good day to replicate that photo. </p>
-        <p>Technologies Used:</p>
-        <div class="technologies">  
-          <p>HTML5</p> <p>CSS3</p> <p>JavaScript</p> <p>Google Maps API</p> <p>Flickr API</p> <p>OpenWeatherMap API</p>
-        </div>
-        <div class="card-links">
-          <a id="live" href="http://ec2-18-216-107-139.us-east-2.compute.amazonaws.com/" target="_blank">Live Demo</a><br>
-          <a id="repo" href="https://github.com/salviolorenzo/photoSpotter" target="_blank">Github</a>
-        </div>
+      <div class="cards" data-aos="fade-left" data-aos-duration="1000">
+        <img src="images/photoblog.png" alt="" title="Photo Blog" />
+        <a href="https://salviolorenzo.github.io/ZoPhotos/" target="_blank"
+          ><p>Photography</p></a
+        >
       </div>
-      <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-        <img src="images/budgetter.png" alt="" id="budgetImg">
-        <h2>Budgetter</h2>
-        <p>A simple web app, used to add incomes and expenses. Keep track of your monthly totals, and quickly calculate a
-          tip!
-        </p>
-        <p>Technologies Used:</p>
-        <div class="technologies">
-          <p>HTML5</p> <p>CSS3</p> <p>JavaScript</p> <p>Node.js</p> <p>Express.js</p> <p>PostgreSQL</p>
-        </div>
-        <div class="card-links">
-          <a id="repo" href="https://github.com/salviolorenzo/budgetTool" target="_blank"><p>Github</p></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="skills-banner banner" id="skills-part">
-    <h1>Skills</h1>
-  </div>
-  <section class="skills">
-    <div class="container" data-aos="fade-left" data-aos-duration="800">
-      <i class="fab fa-html5"></i>
-      <h3>HTML5</h3>
-    </div>
-    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
-      <i class="fab fa-css3-alt"></i>
-      <h3>CSS3</h3>
-    </div>
-    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-      <i class="fab fa-js-square"></i>
-      <h3>JavaScript</h3>
-    </div>
-    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
-      <i class="fab fa-react"></i>
-      <h3>React.js</h3>
-    </div>
-    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-      <i class="fab fa-node-js"></i>
-      <h3>Node.js</h3>
-    </div>
-    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
-      <img src="images/psql.png" alt="">
-      <h3>PostgreSQL</h3>
-    </div>
-    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
-      <i class="fab fa-git-square"></i>
-      <h3>Git</h3>
-    </div>
-    <div class="container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="700">
-      <i class="fab fa-aws"></i>
-      <h3>Amazon Web Services</h3>
-    </div>
-  </section>
-  <div class="banner side-banner">
-    <h1>Side Projects</h1>
-  </div>
-  <section class="side-projects">
-    <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-      <img src="images/ableton.png" alt="" title="Ableton Live 10">
-      <a href="https://soundcloud.com/zo_music" target="_blank"><p>Music Production</p></a>
-    </div>
-    <div class="cards" data-aos="fade-left" data-aos-duration="1000">
-      <img src="images/photoblog.png" alt="" title="Photo Blog">
-      <a href="https://salviolorenzo.github.io/ZoPhotos/" target="_blank"><p>Photography </p></a>
-    </div>
-  </section>
-  <div class="banner contact-banner">
-    <h1>Let's build something</h1>
-  </div>
-  <footer>
-    <a class="resume" href="https://drive.google.com/file/d/1THaQZ4Z3GxS2LNiCQG5v7fZXCibKkJ1R/view?usp=sharing" target="_blank"><h3>Download
-        my resume.</h3></a>
-    <a class="resume" href="http://github.com/salviolorenzo/salviolorenzoPortfolio" target="_blank"><h4>See the code for
-        this site.</h4></a>
-        <ul class="contact" id="contact-me">
-          <li><a href="tel:1-949-285-1391"><i class="fas fa-phone-square"></i></a>
-            <li><a href="mailto:salviolorenzo@gmail.com"><i class="fas fa-envelope-square"></i></a>
-              <li><a href="https://www.linkedin.com/in/lorenzo-salvio" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://github.com/salviolorenzo" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-  </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init()
-  </script>
-  <script src="scripts/index.js"></script>
-</body>
-<!-- THIS IS A TEST -->
+    </section>
+    <div class="banner contact-banner"><h1>Let's build something</h1></div>
+    <footer>
+      <a
+        class="resume"
+        href="https://drive.google.com/file/d/1THaQZ4Z3GxS2LNiCQG5v7fZXCibKkJ1R/view?usp=sharing"
+        target="_blank"
+        ><h3>Download my resume.</h3></a
+      >
+      <a
+        class="resume"
+        href="http://github.com/salviolorenzo/salviolorenzoPortfolio"
+        target="_blank"
+        ><h4>See the code for this site.</h4></a
+      >
+      <ul class="contact" id="contact-me">
+        <li>
+          <a href="tel:1-949-285-1391"><i class="fas fa-phone-square"></i></a>
+        </li>
+        <li>
+          <a href="mailto:salviolorenzo@gmail.com"
+            ><i class="fas fa-envelope-square"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/lorenzo-salvio" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/salviolorenzo" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="scripts/index.js"></script>
+  </body>
+  <!-- THIS IS A TEST -->
 </html>
