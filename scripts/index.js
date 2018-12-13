@@ -62,33 +62,17 @@ psImg.addEventListener('mouseout', () => {
 });
 
 homeLink.addEventListener('click', () => {
-  home.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'center' });
+  home.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 aboutMeLink.addEventListener('click', () => {
-  aboutMe.scrollIntoView({
-    behavior: 'smooth',
-    block: 'end',
-    inline: 'center'
-  });
+  aboutMe.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 projectsLink.addEventListener('click', () => {
-  projects.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-    inline: 'center'
-  });
+  projects.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 skillsLink.addEventListener('click', () => {
-  skills.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-    inline: 'center'
-  });
+  skills.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 contactLink.addEventListener('click', () => {
-  contact.scrollIntoView({
-    behavior: 'smooth',
-    block: 'end',
-    inline: 'center'
-  });
+  contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
