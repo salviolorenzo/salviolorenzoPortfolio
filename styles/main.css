@@ -107,6 +107,8 @@ header li {
 header li:hover {
   transform: scale(1.2);
   transition: transform 0.25s;
+  color: #499dcb;
+  cursor: pointer;
 }
 
 header h1 {
