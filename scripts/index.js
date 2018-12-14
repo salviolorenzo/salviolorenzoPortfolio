@@ -67,7 +67,7 @@ homeLink.addEventListener('click', () => {
 aboutMeLink.addEventListener('click', () => {
   aboutMe.scrollIntoView({
     behavior: 'smooth',
-    block: 'end',
+    block: 'center',
     inline: 'center'
   });
 });
