@@ -65,7 +65,7 @@ homeLink.addEventListener('click', () => {
   home.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 aboutMeLink.addEventListener('click', () => {
-  aboutMe.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  aboutMe.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 projectsLink.addEventListener('click', () => {
   projects.scrollIntoView({ behavior: 'smooth', block: 'start' });
