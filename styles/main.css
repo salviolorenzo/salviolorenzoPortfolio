@@ -574,6 +574,10 @@ MEDIA QUERIES
     width: 45%;
   }
 
+  .side-projects p {
+    padding: 2px;
+  }
+
   .side-projects .cards img {
     width: 100%;
   }
