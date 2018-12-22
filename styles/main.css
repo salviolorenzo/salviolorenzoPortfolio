@@ -340,7 +340,7 @@ SKILLS STYLES
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
+  padding: 20px 5px;
   color: rgb(53, 53, 53);
 }
 
@@ -357,9 +357,13 @@ SKILLS STYLES
 .container .fab {
   font-size: 60px;
 }
-.container i {
-  width: 80px;
+
+.container .devicon {
+  font-size: 60px;
 }
+/* .container i {
+  width: 80px;
+} */
 
 .container img {
   max-width: 61px;
@@ -561,7 +565,7 @@ MEDIA QUERIES
   }
 
   .container {
-    width: 10%;
+    width: 8%;
   }
   .side-projects {
     justify-content: space-evenly;
