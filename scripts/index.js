@@ -61,6 +61,14 @@ psImg.addEventListener('mouseout', () => {
   psImg.src = '../images/desktopLanding.png';
 });
 
+ReactImg.addEventListener('mouseover', () => {
+  ReactImg.src = 'https://media.giphy.com/media/3d8mZsqNWY3ut85M2L/giphy.gif';
+});
+
+ReactImg.addEventListener('mouseout', () => {
+  ReactImg.src = '../images/ReactProj.png';
+});
+
 homeLink.addEventListener('click', () => {
   home.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });

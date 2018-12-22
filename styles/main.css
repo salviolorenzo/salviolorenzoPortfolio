@@ -257,6 +257,7 @@ PROJECTS STYLES
   /* max-height: 500px; */
   display: flex;
   margin: 10px 0;
+  padding: 10px 5px;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
@@ -579,6 +580,16 @@ MEDIA QUERIES
     justify-content: space-evenly;
   }
   .cards {
-    width: 30%;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .cards {
+    width: 24%;
+  }
+
+  .technologies p {
+    width: 65%;
   }
 }
