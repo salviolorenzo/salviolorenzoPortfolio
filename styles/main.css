@@ -320,10 +320,7 @@ PROJECTS STYLES
   color: black;
 }
 
-#live:hover {
-  background-color: rgba(97, 168, 255, 0.7);
-}
-
+#live:hover,
 #repo:hover {
   background-color: rgba(97, 168, 255, 0.7);
 }
@@ -500,6 +497,10 @@ MEDIA QUERIES
     width: 48%;
   }
 
+  .technologies p {
+    width: 60%;
+  }
+
   .landing h1 {
     font-size: 40px;
   }
@@ -562,6 +563,10 @@ MEDIA QUERIES
 
   .head-shot {
     width: 25%;
+  }
+
+  .technologies p {
+    width: 47%;
   }
 
   .container {
