@@ -570,7 +570,7 @@ MEDIA QUERIES
   }
 
   .container {
-    width: 15%;
+    width: 20%;
   }
   .side-projects {
     justify-content: space-evenly;
@@ -596,7 +596,7 @@ MEDIA QUERIES
     width: 45%;
   }
   .container {
-    width: 10%;
+    width: 15%;
   }
 }
 
@@ -607,5 +607,8 @@ MEDIA QUERIES
 
   .technologies p {
     width: 65%;
+  }
+  .container {
+    width: 8%;
   }
 }
