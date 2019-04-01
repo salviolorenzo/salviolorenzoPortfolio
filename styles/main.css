@@ -240,6 +240,47 @@ ABOUT ME STYLES
 }
 
 /* ======================================
+ARTICLE STYLES
+========================================*/
+
+.hype-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hype-article > div,
+.hype-article a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hype-article h3 {
+  padding: 30px 0;
+  width: 70%;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+.hype-article img {
+  max-width: 80%;
+  max-height: 400px;
+}
+
+.hype-article img:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+  transition: box-shadow 0.5s;
+  transition: transform 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ======================================
 PROJECTS STYLES
 ========================================*/
 
