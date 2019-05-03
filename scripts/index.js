@@ -12,6 +12,21 @@ function typeWriter() {
   }
 }
 
+const colorPicker = () => {
+  const colors = [
+    'rgba(148, 0, 211, 0.6)',
+    'rgba(75, 0, 130, 0.6)',
+    'rgba(0, 0, 255, 0.6)',
+    'rgba(0, 255, 0, 0.6)',
+    'rgba(255, 255, 0, 0.6)',
+    'rgba(255, 127, 0, 0.6)',
+    'rgba(255, 0 , 0, 0.6)'
+  ];
+
+  let index = Math.floor(Math.random() * colors.length);
+  return colors[index];
+};
+
 typeWriter();
 
 const header = document.querySelector('[data-header]');
@@ -32,6 +47,8 @@ const contactLink = document.querySelector('[data-contact-link]');
 
 const hamburger = document.querySelector('[data-hamburger]');
 const mobileNav = document.querySelector('[data-mobile-nav]');
+const techItems = document.getElementsByClassName('tech-item');
+const iconsList = document.getElementsByClassName('container');
 
 hamburger.addEventListener('click', () => {
   mobileNav.classList.toggle('hidden');
@@ -84,3 +101,23 @@ skillsLink.addEventListener('click', () => {
 contactLink.addEventListener('click', () => {
   contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+
+for (item of techItems) {
+  item.addEventListener('mouseenter', event => {
+    event.target.style.backgroundColor = colorPicker();
+    event.target.style.color = 'rgba(0, 0, 0, 1)';
+  });
+  item.addEventListener('mouseleave', event => {
+    event.target.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    event.target.style.color = 'white';
+  });
+}
+
+for (item of iconsList) {
+  item.addEventListener('mouseenter', event => {
+    event.target.style.color = colorPicker();
+  });
+  item.addEventListener('mouseleave', event => {
+    event.target.style.color = 'rgba(0, 0, 0, 0.8)';
+  });
+}
