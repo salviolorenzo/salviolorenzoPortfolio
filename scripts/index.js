@@ -14,17 +14,20 @@ function typeWriter() {
 
 const colorPicker = () => {
   const colors = [
-    'rgba(148, 0, 211, 0.6)',
-    'rgba(75, 0, 130, 0.6)',
-    'rgba(0, 0, 255, 0.6)',
-    'rgba(0, 255, 0, 0.6)',
-    'rgba(255, 255, 0, 0.6)',
-    'rgba(255, 127, 0, 0.6)',
-    'rgba(255, 0 , 0, 0.6)'
+    'rgba(0, 104, 201, 0.8)',
+    'rgba(46, 147, 241, 0.8)',
+    'rgba(94, 172, 245, 0.8)',
+    'rgba(125, 182, 236, 0.8)',
+    'rgba(157, 197, 235, 0.8)',
+    'rgba(199, 219, 238, 0.8)',
+    'rgba(173, 173, 173, 0.8)'
   ];
 
   let index = Math.floor(Math.random() * colors.length);
-  return colors[index];
+  while (index < colors.length) {
+    return colors[index];
+    index++;
+  }
 };
 
 typeWriter();
@@ -105,7 +108,7 @@ contactLink.addEventListener('click', () => {
 for (item of techItems) {
   item.addEventListener('mouseenter', event => {
     event.target.style.backgroundColor = colorPicker();
-    event.target.style.color = 'rgba(0, 0, 0, 1)';
+    // event.target.style.color = 'rgba(0, 0, 0, 1)';
   });
   item.addEventListener('mouseleave', event => {
     event.target.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
