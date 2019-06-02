@@ -4,13 +4,30 @@ let textArray = ['Software Developer', 'Musician', 'Leader', 'Creator'];
 let txt = 'Software Developer'; /* The text */
 var speed = 100; /* The speed/duration of the effect in milliseconds */
 
-function typeWriter() {
+const typeWriter = () => {
   if (i < txt.length) {
     tagLine.textContent += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
-}
+};
+
+const carouselDiv = document.querySelector('[data-carousel]');
+
+const images = ['IMG_0289.jpg', 'IMG_0311.jpeg', 'IMG_0315.jpeg', 'paris.jpg'];
+const carousel = () => {
+  let count = 0;
+  window.setInterval(function() {
+    if (count < 3) {
+      carouselDiv.style.backgroundImage = `url(./images/${images[count]})`;
+      count++;
+    } else {
+      count = 0;
+      carouselDiv.style.backgroundImage = `url(./images/${images[count]})`;
+      count++;
+    }
+  }, 5000);
+};
 
 const colorPicker = () => {
   const colors = [
@@ -29,6 +46,7 @@ const colorPicker = () => {
 };
 
 typeWriter();
+carousel();
 
 const header = document.querySelector('[data-header]');
 const uMoodImg = document.getElementById('uMoodImg');
