@@ -100,6 +100,7 @@ header {
   top: 0;
   left: 0;
   justify-content: space-between;
+  padding-right: 35px;
   z-index: 5;
   width: 100%;
   background-color: white;
@@ -335,6 +336,7 @@ PROJECTS STYLES
   flex-wrap: no-wrap;
   overflow: hidden;
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
