@@ -1,12 +1,29 @@
 /* ======================================
 GLOBAL STYLES
 ========================================*/
+@-webkit-keyframes expand {
+  from {
+    height: 0;
+  }
+  to {
+    height: 190px;
+  }
+}
 @keyframes expand {
   from {
     height: 0;
   }
   to {
     height: 190px;
+  }
+}
+@-webkit-keyframes contract {
+  from {
+    height: 190px;
+    z-index: 1;
+  }
+  to {
+    height: 0;
   }
 }
 @keyframes contract {
@@ -19,12 +36,30 @@ GLOBAL STYLES
   }
 }
 
+@-webkit-keyframes slide-right {
+  from {
+    margin-right: auto;
+  }
+  to {
+    margin-right: 100;
+  }
+}
+
 @keyframes slide-right {
   from {
     margin-right: auto;
   }
   to {
     margin-right: 100;
+  }
+}
+
+@-webkit-keyframes items {
+  from {
+    height: 0;
+  }
+  to {
+    height: 1;
   }
 }
 
@@ -38,11 +73,13 @@ GLOBAL STYLES
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -93,18 +130,24 @@ HEADER STYLES
 ========================================*/
 header {
   min-height: 100px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: static;
   top: 0;
   left: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-right: 35px;
   z-index: 5;
   width: 100%;
   background-color: white;
   /* opacity: 0.9;x */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-weight: lighter;
 }
@@ -114,8 +157,14 @@ header li {
 }
 
 header li:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  -o-transition: transform 0.25s;
   transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
   color: #499dcb;
   cursor: pointer;
 }
@@ -135,10 +184,16 @@ header img {
 
 .desktopNav {
   display: none;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /* max-width: 100%; */
   margin: 0;
+  -webkit-transition: font-size 0.7s;
+  -o-transition: font-size 0.7s;
   transition: font-size 0.7s;
   font-size: 12px;
 }
@@ -150,18 +205,27 @@ header img {
 .mobileNav {
   padding: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   top: 100px;
   background-color: rgba(228, 228, 228, 1);
   width: 100%;
+  -webkit-animation: expand 0.5s ease-out;
   animation: expand 0.5s ease-out;
   /* z-index: 0; */
   overflow: hidden;
 }
 
 .hidden {
+  -webkit-animation: contract 0.5s ease-out;
   animation: contract 0.5s ease-out;
   height: 0;
   overflow: hidden;
@@ -185,8 +249,16 @@ HERO IMAGE STYLES
   min-width: 100%;
   min-height: 800px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: "Ubuntu", sans-serif;
   color: rgb(28, 28, 28);
@@ -194,6 +266,8 @@ HERO IMAGE STYLES
 }
 
 .landing h1 {
+  -webkit-transition: font-size 0.5s;
+  -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
 }
 
@@ -202,17 +276,30 @@ ABOUT ME STYLES
 ========================================*/
 
 .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .head-shot {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 .head-shot img {
@@ -241,8 +328,14 @@ ABOUT ME STYLES
   background-size: cover;
   min-height: 150px;
   min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .banner h1 {
@@ -254,8 +347,13 @@ ARTICLE STYLES
 ========================================*/
 
 .hype-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   margin-bottom: 20px;
@@ -264,8 +362,14 @@ ARTICLE STYLES
 .hype-article > div,
 .hype-article a {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -282,10 +386,21 @@ ARTICLE STYLES
 }
 
 .hype-article img:hover {
+  -webkit-box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.75);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
   transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -296,7 +411,10 @@ PROJECTS STYLES
 
 .project-cards,
 .side-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
   padding: 10px;
@@ -306,11 +424,19 @@ PROJECTS STYLES
   width: 100%;
   min-height: 300px;
   /* max-height: 500px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 10px 0;
   padding: 10px 5px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-bottom: 10px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -332,7 +458,10 @@ PROJECTS STYLES
   padding: 0 auto;
   margin: 0 auto;
   height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: no-wrap;
   flex-wrap: no-wrap;
   overflow: hidden;
   background-size: contain;
@@ -353,9 +482,16 @@ PROJECTS STYLES
 }
 
 .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: space-evenly;
+  -ms-flex-align: space-evenly;
   align-items: space-evenly;
   width: 80%;
   padding-bottom: 5px;
@@ -372,6 +508,8 @@ PROJECTS STYLES
 }
 
 .card-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   /* padding: 10px; */
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -402,9 +540,16 @@ SKILLS STYLES
 }
 
 .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 20px 5px;
   color: rgb(53, 53, 53);
@@ -413,8 +558,15 @@ SKILLS STYLES
 .container {
   width: 40%;
   display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 10px 0;
   text-align: center;
@@ -443,12 +595,15 @@ SIDE PROJECTS STYLES
 }
 .side-projects {
   padding: 10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: center;
 }
 
 .cards {
   border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -456,6 +611,8 @@ SIDE PROJECTS STYLES
   height: 90%;
   max-height: 300px;
   display: inherit;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -472,11 +629,18 @@ FOOTER STYLES
   background-position: center;
 }
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: rgb(255, 255, 255);
 
+  -ms-flex-wrap: wrap;
+
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 100px;
 }
@@ -492,6 +656,8 @@ footer {
 .contact {
   display: inherit;
   width: 100%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -503,8 +669,14 @@ footer {
 
 .contact i:hover {
   color: #499dcb;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
   transform: scale(1.5);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  -o-transition: transform 0.25s;
   transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
 .footer ul {
@@ -533,9 +705,13 @@ MEDIA QUERIES
   }
 
   .desktopNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 18px;
     width: 100%;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 
@@ -555,6 +731,8 @@ MEDIA QUERIES
     width: 30%;
   }
   .project-cards {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 
@@ -563,6 +741,7 @@ MEDIA QUERIES
   }
 
   .contact {
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 }
@@ -586,8 +765,12 @@ MEDIA QUERIES
     font-size: 22px;
   }
   .desktopNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* width: 100%; */
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     font-size: 150%;
   }
@@ -600,10 +783,14 @@ MEDIA QUERIES
 @media screen and (min-width: 900px) {
   header {
     /* justify-content: flex-end; */
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
   }
 
   .desktopNav {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
   .bio {
@@ -622,6 +809,8 @@ MEDIA QUERIES
   }
 
   .project-cards {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
@@ -651,6 +840,8 @@ MEDIA QUERIES
     width: 20%;
   }
   .side-projects {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
   .side-projects .cards {
@@ -668,6 +859,8 @@ MEDIA QUERIES
 
 @media screen and (min-width: 1400px) {
   .project-cards {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
   .cards {
