@@ -22,28 +22,6 @@ const typeWriter = (text) => {
     }
 };
 
-const typeWriterDelete = (text) => {
-    if (i > 0) {
-        tagLine.textContent = tagLine.textContent.substring(
-            0,
-            tagLine.textContent.length - 1
-        );
-
-        i--;
-        setTimeout(() => typeWriterDelete(text), 100);
-    }
-
-    if (i == 0) {
-        if (textIndex == textArray.length - 1) {
-            textIndex = 0;
-        } else {
-            textIndex++;
-        }
-
-        delay(1000).then(() => typeWriter(textArray[textIndex]));
-    }
-};
-
 const carouselDiv = document.querySelector("[data-carousel]");
 
 const images = ["IMG_0289.jpg", "IMG_0311.jpeg", "IMG_0315.jpeg", "paris.jpg"];
