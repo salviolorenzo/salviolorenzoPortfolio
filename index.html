@@ -1,595 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="keywords"
-      content="developer, web, software, engineer, design, web-development, website, html, css, javascript, node, react, redux"
-    />
-    <link rel="image_src" href="/images/bbLWhite.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
-    />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="keywords"
+            content="developer, web, software, engineer, design, web-development, website, html, css, javascript, node, react, redux"
+        />
+        <link rel="image_src" href="/images/bbLWhite.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Ubuntu"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+        />
 
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="images/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="images/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="images/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="images/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="images/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="images/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="images/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="images/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="images/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="images/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- favicon -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="images/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="images/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="images/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="images/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="images/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="images/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="images/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="images/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="images/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="images/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="images/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="images/favicon/favicon-16x16.png"
+        />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- favicon -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
 
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>Lorenzo Salvio | Portfolio</title>
-  </head>
+        <link rel="stylesheet" href="styles/main.css" />
+        <title>Lorenzo Salvio | Portfolio</title>
+    </head>
 
-  <body>
-    <header data-header id="home">
-      <h1>Lorenzo Eric Salvio</h1>
-      <nav class="desktopNav">
-        <li data-home-link>Home</li>
-        <li data-about-me-link>About</li>
-        <li data-projects-link>Projects</li>
-        <li data-skills-link>Skills</li>
-        <li data-contact-link>Contact</li>
-      </nav>
-      <img src="images/hamburger.svg" alt="" data-hamburger />
-      <nav class="mobileNav hidden" data-mobile-nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about-me">About</a></li>
-        <li><a href="#project-section">Projects</a></li>
-        <li><a href="#skills-part">Skills</a></li>
-        <li><a href="#contact-me">Contact</a></li>
-      </nav>
-    </header>
-    <section class="landing" data-landing data-home>
-      <h1 data-tagLine data-aos="zoom-in" data-aos-duration="1000"></h1>
-    </section>
-    <section
-      class="about"
-      id="about-me"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      data-about-me
-    >
-      <div class="about-container">
-        <div class="head-shot">
-          <img
-            src="images/Lorenzo-web-370x270.jpg"
-            alt="Lorenzo Salvio headshot"
-          />
-        </div>
-        <div class="bio">
-          <p>
-            Creative software engineer with the ability to pick up new languages
-            and technologies as needed, looking for a place to learn and grow as
-            a developer, and move into a management / leadership role. Over the
-            course of my career so far, I have discovered how important it is to
-            have a top-down company culture based on growth as an individual,
-            and as a team. I would love to find a team where I can contribute to
-            shaping the culture in a way that positively impacts everyone
-            involved. I am passionate about creating high quality experiences
-            for end-users, and am excited to join a team that shares this
-            passion.
-          </p>
-        </div>
-      </div>
-      <div class="hype-article">
-        <h3>Check out my feature on Hypepotamus!</h3>
-        <div>
-          <a
-            href="https://hypepotamus.com/people/lorenzo-salvio/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img src="./images/hypepotamus_article.png" />
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="projects" id="project-section" data-projects>
-      <div class="banner"><h1>Projects</h1></div>
-      <div class="project-cards">
-        <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-          <img src="images/UburDub.png" alt="" id="UburDub" />
-          <h2>Ubur Dubstep</h2>
-          <p>
-            An informational website built for Producer / DJ Ubur. Front-End
-            only application built with React.js
-          </p>
-          <p>Technologies Used:</p>
-          <div class="technologies">
-            <p class="tech-item">React.js</p>
-            <p class="tech-item">React Router</p>
-            <p class="tech-item">CSS3</p>
-            <p class="tech-item">Shopify API</p>
-            <p class="tech-item">Songkick API</p>
-          </div>
-          <div class="card-links">
-            <a
-              id="repo"
-              href="https://github.com/salviolorenzo/uburSiteProject"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-          <img src="images/dash1DT.png" alt="" id="capstoneImg" />
-          <h2>DSHBRD</h2>
-          <p>
-            An interactive, customizable virtual social assistant. The driving
-            concept behind this project was that there is now an app for
-            everything a person can think of, but a user needs to have so many
-            different apps downloaded in order to get all the information he or
-            she needs. DSHBRD is meant to save you time by keeping everything in
-            one place.<br />
-            Front-End built with React.js, React Router, powered by an
-            Express.js Back-End connected to a PostgreSQL database.
-          </p>
-          <p>Technologies Used:</p>
-          <div class="technologies">
-            <p class="tech-item">React.js</p>
-            <p class="tech-item">React Router</p>
-            <p class="tech-item">Node.js</p>
-            <p class="tech-item">Express.js</p>
-            <p class="tech-item">PostgreSQL</p>
-            <p class="tech-item">CSS3</p>
-            <p class="tech-item">Moment.js</p>
-            <p class="tech-item">Maps API</p>
-          </div>
-          <div class="card-links">
-            <a
-              id="repo"
-              href="https://github.com/salviolorenzo/capstone"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-          <img src="images/ReactProj.png" alt="" id="ReactImg" />
-          <h2>Dashboard</h2>
-          <p>
-            A single page web application with the purpose of containing
-            multiple different "mini-app" widgets within it. The goal was to
-            create a customizable "one-stop-shop" of sorts. Rather than using
-            many different applications, use one single page app to track
-            everything.<br />
-            Front-End built with React.js, powered by an Express.js Back-End
-            connected to a PostgreSQL database.
-          </p>
-          <p>Technologies Used:</p>
-          <div class="technologies">
-            <p class="tech-item">React.js</p>
-            <p class="tech-item">React Router</p>
-            <p class="tech-item">Node.js</p>
-            <p class="tech-item">Express.js</p>
-            <p class="tech-item">PostgreSQL</p>
-            <p class="tech-item">CSS3</p>
-            <p class="tech-item">Bcrypt</p>
-          </div>
-          <div class="card-links">
-            <a
-              id="repo"
-              href="https://github.com/salviolorenzo/reactDashboard"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-          <img src="images/desktopHome.png" alt="" id="uMoodImg" />
-          <h2>uMood</h2>
-          <p>
-            A web application meant to allow users to track their daily level of
-            wellbeing, based on their daily answers to 6 questions from the
-            WHODAS 36 Depression Screen. <br />
-            Answers for the 6 previous days and current day are displayed
-            graphically through a Chart.js line chart, and stored in a
-            PostgreSQL database
-          </p>
-          <p>Technologies Used:</p>
-          <div class="technologies">
-            <p class="tech-item">HTML5</p>
-            <p class="tech-item">CSS3</p>
-            <p class="tech-item">Node.js</p>
-            <p class="tech-item">Express.js</p>
-            <p class="tech-item">PostgreSQL</p>
-            <p class="tech-item">Chart.js</p>
-            <p class="tech-item">Bcrypt</p>
-          </div>
-          <div class="card-links">
-            <a
-              id="repo"
-              href="https://github.com/samerickson95/uMood"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-          <img src="images/desktopLanding.png" alt="" id="psImg" />
-          <h2>PhotoSpotter</h2>
-          <p>
-            A web app that retrieves images based on keyword searches, and
-            displays metadata for the image, including location on a map, and
-            the weather for that location. The being to tell the user whether it
-            is a good day to replicate that photo.
-          </p>
-          <p>Technologies Used:</p>
-          <div class="technologies">
-            <p class="tech-item">HTML5</p>
-            <p class="tech-item">CSS3</p>
-            <p class="tech-item">JavaScript</p>
-            <p class="tech-item">Google Maps API</p>
-            <p class="tech-item">Flickr API</p>
-            <p class="tech-item">OpenWeatherMap API</p>
-          </div>
-          <div class="card-links">
-            <a
-              id="live"
-              href="http://ec2-18-216-107-139.us-east-2.compute.amazonaws.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Live Demo</a
-            ><br />
-            <a
-              id="repo"
-              href="https://github.com/salviolorenzo/photoSpotter"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div class="cards" data-aos="fade-right" data-aos-duration="1000">
-          <img src="images/Landingimg.png" alt="" id="budgetImg" />
-          <h2>Budgetter</h2>
-          <p>
-            A simple web app, used to add incomes and expenses. Keep track of
-            your monthly totals. All information is stored in a PostgreSQL
-            database.
-          </p>
-          <p>Technologies Used:</p>
-          <div class="technologies">
-            <p class="tech-item">HTML5</p>
-            <p class="tech-item">CSS3</p>
-            <p class="tech-item">JavaScript</p>
-            <p class="tech-item">Node.js</p>
-            <p class="tech-item">Express.js</p>
-            <p class="tech-item">PostgreSQL</p>
-          </div>
-          <div class="card-links">
-            <a
-              id="repo"
-              href="https://github.com/salviolorenzo/budgetTool"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><p>Github</p></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="skills-banner banner" id="skills-part" data-skills>
-      <h1>Skills</h1>
-    </div>
-    <section class="skills">
-      <div class="container" data-aos="fade-left" data-aos-duration="800">
-        <i class="fab fa-html5"></i>
-        <h4>HTML5</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="100"
-      >
-        <i class="fab fa-css3-alt"></i>
-        <h4>CSS3</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="200"
-      >
-        <i class="fab fa-js-square"></i>
-        <h4>JavaScript</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="300"
-      >
-        <i class="fab devicon-typescript-plain"></i>
-        <h4>TypeScript</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="400"
-      >
-        <i class="fab fa-react"></i>
-        <h4>React.js</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="500"
-      >
-        <i class="devicon devicon-angularjs-plain"></i>
-        <h4>Angular</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="600"
-      >
-        <i class="fab fa-node-js"></i>
-        <h4>Node.js</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="700"
-      >
-        <i class="devicon devicon-express-original"></i>
-        <h4>Express.js</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="800"
-      >
-        <i class="devicon devicon-nextjs-line"></i>
-        <h4>Next.js</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="900"
-      >
-        <i class="devicon devicon-webpack-plain"></i>
-        <h4>Webpack</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="1000"
-      >
-        <i class="devicon devicon-python-plain"></i>
-        <h4>Python</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="1100"
-      >
-        <i class="devicon devicon-php-plain"></i>
-        <h4>PHP</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="1200"
-      >
-        <i class="devicon devicon-laravel-plain"></i>
-        <h4>Laravel</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="1300"
-      >
-        <i class="devicon devicon-postgresql-plain"></i>
-        <h4>PostgreSQL</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="1400"
-      >
-        <i class="devicon devicon-mysql-plain"></i>
-        <h4>MySQL</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="1500"
-      >
-        <i class="devicon devicon-git-plain"></i>
-        <h4>Git</h4>
-      </div>
-      <div
-        class="container"
-        data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="1600"
-      >
-        <i class="devicon devicon-amazonwebservices-original"></i>
-        <h4>Amazon Web Services</h4>
-      </div>
-    </section>
-    <div class="banner side-banner"><h1>Side Projects</h1></div>
-    <section class="side-projects">
-      <div class="cards" data-aos="fade-right" data-aos-duration="1500">
-        <iframe
-          width="100%"
-          height="300"
-          scrolling="no"
-          frameborder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/793901367&color=%231a1114&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-        <a
-          href="https://soundcloud.com/zo_music"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><p>Music Production</p></a
+    <body>
+        <header data-header id="home">
+            <h1>Lorenzo Eric Salvio</h1>
+            <nav class="desktopNav">
+                <li data-home-link>Home</li>
+                <li data-about-me-link>About</li>
+                <li data-projects-link>Projects</li>
+                <li data-skills-link>Skills</li>
+                <li data-contact-link>Contact</li>
+            </nav>
+            <img src="images/hamburger.svg" alt="" data-hamburger />
+            <nav class="mobileNav hidden" data-mobile-nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#project-section">Projects</a></li>
+                <li><a href="#skills-part">Skills</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </nav>
+        </header>
+        <section class="landing" data-landing data-home>
+            <h1 data-tagLine data-aos="zoom-in" data-aos-duration="1000"></h1>
+        </section>
+        <section
+            class="about"
+            id="about-me"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-about-me
         >
-      </div>
-      <div class="cards" data-aos="fade-left" data-aos-duration="1000">
-        <div class="carousel" data-carousel></div>
-        <!-- <img src="images/paris.jpg" alt="" title="Photo Blog" /> -->
-        <p>Photography</p>
-      </div>
-    </section>
-    <div class="banner contact-banner"><h1>Let's build something.</h1></div>
-    <footer data-contact>
-      <a
-        class="resume"
-        href="https://drive.google.com/file/d/1PNxPRPWCLhA4sf2aoC96-oOvbgxVcAWp/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><h3>Download my resume.</h3></a
-      >
-      <a
-        class="resume"
-        href="http://github.com/salviolorenzo/salviolorenzoPortfolio"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><h4>See the code for this site.</h4></a
-      >
-      <ul class="contact" id="contact-me">
-        <li>
-          <a href="mailto:salviolorenzo@gmail.com"
-            ><i class="fas fa-envelope-square"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/lorenzo-salvio"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/salviolorenzoWela"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="scripts/index.js"></script>
-  </body>
+            <div class="about-container">
+                <div class="head-shot">
+                    <img
+                        src="images/Lorenzo-web-370x270.jpg"
+                        alt="Lorenzo Salvio headshot"
+                    />
+                </div>
+                <div class="bio">
+                    <p>
+                        Creative software engineer with the ability to pick up
+                        new languages and technologies as needed, looking for a
+                        place to learn and grow as a developer, and move into a
+                        management / leadership role. Over the course of my
+                        career so far, I have discovered how important it is to
+                        have a top-down company culture based on growth as an
+                        individual, and as a team. I would love to find a team
+                        where I can contribute to shaping the culture in a way
+                        that positively impacts everyone involved. I am
+                        passionate about creating high quality experiences for
+                        end-users, and am excited to join a team that shares
+                        this passion.
+                    </p>
+                </div>
+            </div>
+            <div class="hype-article">
+                <h3>Check out my feature on Hypepotamus!</h3>
+                <div>
+                    <a
+                        href="https://hypepotamus.com/people/lorenzo-salvio/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <img src="./images/hypepotamus_article.png" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="project-section" data-projects>
+            <div class="banner"><h1>Projects</h1></div>
+            <div class="project-cards">
+                <div
+                    class="cards"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
+                    <img src="images/UburDub.png" alt="" id="UburDub" />
+                    <h2>Ubur Dubstep</h2>
+                    <p>
+                        An informational website built for Producer / DJ Ubur.
+                        Front-End only application built with React.js
+                    </p>
+                    <p>Technologies Used:</p>
+                    <div class="technologies">
+                        <p class="tech-item">React.js</p>
+                        <p class="tech-item">React Router</p>
+                        <p class="tech-item">CSS3</p>
+                        <p class="tech-item">Shopify API</p>
+                        <p class="tech-item">Songkick API</p>
+                    </div>
+                    <div class="card-links">
+                        <a
+                            id="repo"
+                            href="https://github.com/salviolorenzo/uburSiteProject"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+                <div
+                    class="cards"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
+                    <img src="images/dash1DT.png" alt="" id="capstoneImg" />
+                    <h2>DSHBRD</h2>
+                    <p>
+                        An interactive, customizable virtual social assistant.
+                        The driving concept behind this project was that there
+                        is now an app for everything a person can think of, but
+                        a user needs to have so many different apps downloaded
+                        in order to get all the information he or she needs.
+                        DSHBRD is meant to save you time by keeping everything
+                        in one place.<br />
+                        Front-End built with React.js, React Router, powered by
+                        an Express.js Back-End connected to a PostgreSQL
+                        database.
+                    </p>
+                    <p>Technologies Used:</p>
+                    <div class="technologies">
+                        <p class="tech-item">React.js</p>
+                        <p class="tech-item">React Router</p>
+                        <p class="tech-item">Node.js</p>
+                        <p class="tech-item">Express.js</p>
+                        <p class="tech-item">PostgreSQL</p>
+                        <p class="tech-item">CSS3</p>
+                        <p class="tech-item">Moment.js</p>
+                        <p class="tech-item">Maps API</p>
+                    </div>
+                    <div class="card-links">
+                        <a
+                            id="repo"
+                            href="https://github.com/salviolorenzo/capstone"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+                <div
+                    class="cards"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
+                    <img src="images/ReactProj.png" alt="" id="ReactImg" />
+                    <h2>Dashboard</h2>
+                    <p>
+                        A single page web application with the purpose of
+                        containing multiple different "mini-app" widgets within
+                        it. The goal was to create a customizable
+                        "one-stop-shop" of sorts. Rather than using many
+                        different applications, use one single page app to track
+                        everything.<br />
+                        Front-End built with React.js, powered by an Express.js
+                        Back-End connected to a PostgreSQL database.
+                    </p>
+                    <p>Technologies Used:</p>
+                    <div class="technologies">
+                        <p class="tech-item">React.js</p>
+                        <p class="tech-item">React Router</p>
+                        <p class="tech-item">Node.js</p>
+                        <p class="tech-item">Express.js</p>
+                        <p class="tech-item">PostgreSQL</p>
+                        <p class="tech-item">CSS3</p>
+                        <p class="tech-item">Bcrypt</p>
+                    </div>
+                    <div class="card-links">
+                        <a
+                            id="repo"
+                            href="https://github.com/salviolorenzo/reactDashboard"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+                <div
+                    class="cards"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
+                    <img src="images/desktopHome.png" alt="" id="uMoodImg" />
+                    <h2>uMood</h2>
+                    <p>
+                        A web application meant to allow users to track their
+                        daily level of wellbeing, based on their daily answers
+                        to 6 questions from the WHODAS 36 Depression Screen.
+                        <br />
+                        Answers for the 6 previous days and current day are
+                        displayed graphically through a Chart.js line chart, and
+                        stored in a PostgreSQL database
+                    </p>
+                    <p>Technologies Used:</p>
+                    <div class="technologies">
+                        <p class="tech-item">HTML5</p>
+                        <p class="tech-item">CSS3</p>
+                        <p class="tech-item">Node.js</p>
+                        <p class="tech-item">Express.js</p>
+                        <p class="tech-item">PostgreSQL</p>
+                        <p class="tech-item">Chart.js</p>
+                        <p class="tech-item">Bcrypt</p>
+                    </div>
+                    <div class="card-links">
+                        <a
+                            id="repo"
+                            href="https://github.com/samerickson95/uMood"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+                <div
+                    class="cards"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
+                    <img src="images/desktopLanding.png" alt="" id="psImg" />
+                    <h2>PhotoSpotter</h2>
+                    <p>
+                        A web app that retrieves images based on keyword
+                        searches, and displays metadata for the image, including
+                        location on a map, and the weather for that location.
+                        The being to tell the user whether it is a good day to
+                        replicate that photo.
+                    </p>
+                    <p>Technologies Used:</p>
+                    <div class="technologies">
+                        <p class="tech-item">HTML5</p>
+                        <p class="tech-item">CSS3</p>
+                        <p class="tech-item">JavaScript</p>
+                        <p class="tech-item">Google Maps API</p>
+                        <p class="tech-item">Flickr API</p>
+                        <p class="tech-item">OpenWeatherMap API</p>
+                    </div>
+                    <div class="card-links">
+                        <a
+                            id="live"
+                            href="http://ec2-18-216-107-139.us-east-2.compute.amazonaws.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Live Demo</a
+                        ><br />
+                        <a
+                            id="repo"
+                            href="https://github.com/salviolorenzo/photoSpotter"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+                <div
+                    class="cards"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
+                    <img src="images/Landingimg.png" alt="" id="budgetImg" />
+                    <h2>Budgetter</h2>
+                    <p>
+                        A simple web app, used to add incomes and expenses. Keep
+                        track of your monthly totals. All information is stored
+                        in a PostgreSQL database.
+                    </p>
+                    <p>Technologies Used:</p>
+                    <div class="technologies">
+                        <p class="tech-item">HTML5</p>
+                        <p class="tech-item">CSS3</p>
+                        <p class="tech-item">JavaScript</p>
+                        <p class="tech-item">Node.js</p>
+                        <p class="tech-item">Express.js</p>
+                        <p class="tech-item">PostgreSQL</p>
+                    </div>
+                    <div class="card-links">
+                        <a
+                            id="repo"
+                            href="https://github.com/salviolorenzo/budgetTool"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><p>Github</p></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="skills-banner banner" id="skills-part" data-skills>
+            <h1>Skills</h1>
+        </div>
+        <section class="skills">
+            <div class="container" data-aos="fade-left" data-aos-duration="800">
+                <i class="fab fa-html5"></i>
+                <h4>HTML5</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="100"
+            >
+                <i class="fab fa-css3-alt"></i>
+                <h4>CSS3</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="200"
+            >
+                <i class="fab fa-js-square"></i>
+                <h4>JavaScript</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+            >
+                <i class="fab devicon-typescript-plain"></i>
+                <h4>TypeScript</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="400"
+            >
+                <i class="fab fa-react"></i>
+                <h4>React.js</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="500"
+            >
+                <i class="devicon devicon-angularjs-plain"></i>
+                <h4>Angular</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="600"
+            >
+                <i class="fab fa-node-js"></i>
+                <h4>Node.js</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="700"
+            >
+                <i class="devicon devicon-express-original"></i>
+                <h4>Express.js</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="800"
+            >
+                <i class="devicon devicon-nextjs-line"></i>
+                <h4>Next.js</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="800"
+            >
+                <i class="devicon-nestjs-plain"></i>
+                <h4>Nest.js</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="900"
+            >
+                <i class="devicon-kotlin-plain"></i>
+                <h4>Kotlin</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1000"
+            >
+                <i class="devicon-spring-plain"></i>
+                <h4>Spring</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1100"
+            >
+                <i class="devicon-apachekafka-original"></i>
+                <h4>Apache Kafka</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1200"
+            >
+                <i class="devicon devicon-webpack-plain"></i>
+                <h4>Webpack</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1300"
+            >
+                <i class="devicon devicon-python-plain"></i>
+                <h4>Python</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1400"
+            >
+                <i class="devicon devicon-php-plain"></i>
+                <h4>PHP</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1500"
+            >
+                <i class="devicon devicon-laravel-plain"></i>
+                <h4>Laravel</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1600"
+            >
+                <i class="devicon devicon-postgresql-plain"></i>
+                <h4>PostgreSQL</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1700"
+            >
+                <i class="devicon devicon-mysql-plain"></i>
+                <h4>MySQL</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1800"
+            >
+                <i class="devicon-mongodb-plain"></i>
+                <h4>MongoDB</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="1900"
+            >
+                <i class="devicon devicon-git-plain"></i>
+                <h4>Git</h4>
+            </div>
+            <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="2000"
+            >
+                <i class="devicon devicon-amazonwebservices-original"></i>
+                <h4>Amazon Web Services</h4>
+            </div>
+        </section>
+        <div class="banner side-banner"><h1>Side Projects</h1></div>
+        <section class="side-projects">
+            <div class="cards" data-aos="fade-right" data-aos-duration="1500">
+                <iframe
+                    width="100%"
+                    height="300"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/793901367&color=%231a1114&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                ></iframe>
+                <a
+                    href="https://soundcloud.com/zo_music"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><p>Music Production</p></a
+                >
+            </div>
+            <div class="cards" data-aos="fade-left" data-aos-duration="1000">
+                <div class="carousel" data-carousel></div>
+                <!-- <img src="images/paris.jpg" alt="" title="Photo Blog" /> -->
+                <p>Photography</p>
+            </div>
+        </section>
+        <div class="banner contact-banner"><h1>Let's build something.</h1></div>
+        <footer data-contact>
+            <a
+                class="resume"
+                href="https://drive.google.com/file/d/1PNxPRPWCLhA4sf2aoC96-oOvbgxVcAWp/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><h3>Download my resume.</h3></a
+            >
+            <a
+                class="resume"
+                href="http://github.com/salviolorenzo/salviolorenzoPortfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><h4>See the code for this site.</h4></a
+            >
+            <ul class="contact" id="contact-me">
+                <li>
+                    <a href="mailto:salviolorenzo@gmail.com"
+                        ><i class="fas fa-envelope-square"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/lorenzo-salvio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/lorenzosalviow2g"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                </li>
+            </ul>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="scripts/index.js"></script>
+    </body>
 </html>
