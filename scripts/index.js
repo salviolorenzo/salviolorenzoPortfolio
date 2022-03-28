@@ -24,7 +24,12 @@ const typeWriter = (text) => {
 
 const carouselDiv = document.querySelector("[data-carousel]");
 
-const images = ["IMG_0289.jpg", "IMG_0311.jpeg", "IMG_0315.jpeg", "paris.jpg"];
+const images = [
+    "IMG_0289.webp",
+    "IMG_0311.webp",
+    "IMG_0315.webp",
+    "paris.webp",
+];
 const carousel = () => {
     let count = 0;
     window.setInterval(function () {
@@ -81,38 +86,6 @@ const iconsList = document.getElementsByClassName("container");
 
 hamburger.addEventListener("click", () => {
     mobileNav.classList.toggle("hidden");
-});
-
-uMoodImg.addEventListener("mouseover", () => {
-    uMoodImg.src = "https://media.giphy.com/media/YAXIGsoPJojzlVcbJP/giphy.gif";
-});
-
-uMoodImg.addEventListener("mouseout", () => {
-    uMoodImg.src = "../images/desktopHome.png";
-});
-
-// budgetImg.addEventListener("mouseover", () => {
-//   budgetImg.src = "";
-// });
-
-// budgetImg.addEventListener("mouseout", () => {
-//   budgetImg.src = "../images/Landingimg.png";
-// });
-
-psImg.addEventListener("mouseover", () => {
-    psImg.src = "https://media.giphy.com/media/3d19VItGVqFZvfDMrd/giphy.gif";
-});
-
-psImg.addEventListener("mouseout", () => {
-    psImg.src = "../images/desktopLanding.png";
-});
-
-ReactImg.addEventListener("mouseover", () => {
-    ReactImg.src = "https://media.giphy.com/media/3d8mZsqNWY3ut85M2L/giphy.gif";
-});
-
-ReactImg.addEventListener("mouseout", () => {
-    ReactImg.src = "../images/ReactProj.png";
 });
 
 homeLink.addEventListener("click", () => {

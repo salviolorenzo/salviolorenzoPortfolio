@@ -242,7 +242,7 @@ header img {
 HERO IMAGE STYLES
 ========================================*/
 .landing {
-    background-image: url("../images/abstract.jpeg");
+    background-image: url("../images/abstract.webp");
     background-position: center;
     /* background-position-y: px; */
     background-repeat: no-repeat;
@@ -324,7 +324,7 @@ ABOUT ME STYLES
 .banner {
     font-family: "Ubuntu", sans-serif;
     color: white;
-    background-image: url("../images/hand-keys.jpeg");
+    background-image: url("../images/hand-keys.webp");
     background-position: center;
     background-size: cover;
     min-height: 150px;
@@ -344,7 +344,7 @@ ABOUT ME STYLES
 }
 
 .work-experience {
-    background-image: url("../images/work.jpeg");
+    background-image: url("../images/work.webp");
 }
 
 /* ======================================
@@ -541,7 +541,7 @@ PROJECTS STYLES
 SKILLS STYLES
 ========================================*/
 .skills-banner {
-    background-image: url("../images/code.png");
+    background-image: url("../images/code.webp");
 }
 
 .skills {
@@ -596,7 +596,7 @@ SKILLS STYLES
 SIDE PROJECTS STYLES
 ========================================*/
 .side-banner {
-    background-image: url("../images/mixer.jpeg");
+    background-image: url("../images/mixer.webp");
 }
 .side-projects {
     padding: 10px;
@@ -630,7 +630,7 @@ FOOTER STYLES
 ========================================*/
 
 .contact-banner {
-    background-image: url("../images/phone.jpeg");
+    background-image: url("../images/phone.webp");
     background-position: center;
 }
 footer {
